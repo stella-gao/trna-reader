@@ -74,4 +74,4 @@ for i in range(30):
         sentence = sentence[1:] + pred_char
 
     print(sequences[0])
-    print(generated)
+    print(generated, flush=True)
