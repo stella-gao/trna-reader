@@ -12,7 +12,7 @@ test_length = 25
 
 print('Build the single LSTM model...')
 model = Sequential()
-model.add(LSTM(128, input_shape=(maxlen, len(chars))))
+model.add(LSTM(128, input_shape=(test_length, len(chars))))
 model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 
