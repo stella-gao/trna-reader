@@ -15,7 +15,7 @@ chars = ['A', 'C', 'G', 'T']
 char2index = dict((c, i) for i, c in enumerate(chars))
 index2char = dict((i, c) for i, c in enumerate(chars))
 # how much we tell the rnn before it has to guess
-test_length = 50
+test_length = 25
 step = 3
 
 # list of all the tests, semiredundant
