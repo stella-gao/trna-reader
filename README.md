@@ -18,3 +18,8 @@ In order to install Barnacle to an Anaconda environment:
 source activate my-env
 pip install /path/to/barnacle/download/ --target /path/to/anaconda/environment
 ```
+
+# PyMol Issues
+For some reason, I can't get PyMol to install on any system other than Windows. I keep getting "segmentation fault" on my Debian-based systems. I would really like to use PyMol because it would integrate well with my Python-based project.
+
+I am currently looking at VMD (Visual Molecular Dynamics) as an alternative, but I will be using PyMol on Windows for now.
