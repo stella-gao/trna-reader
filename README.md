@@ -4,11 +4,17 @@ A project to see if recurrent neural networks can learn to write transcribe tRNA
 ## Installing Everything
 
 ### Anaconda Packages
+
+Use ```conda install <package-name>``` for Anaconda packages.
+
 * numpy
 * scipy
-* biopython (may come in later)
+* biopython (required if BARNACLE is used)
 
 ### Environment PyPi Packages
+
+Use ```pip install <package-name>``` for PyPi Packages.
+
 * tensorflow
 * keras
 
