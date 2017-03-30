@@ -51,3 +51,12 @@ For some reason, I can't get PyMol to install on any system other than Windows. 
 I am currently looking at VMD (Visual Molecular Dynamics) as an alternative, but I will be using PyMol on Windows for now.
 
 Some possible molecular visualization software that I may use in the future are listed on the [Biopython Structural Bioinformatics FAQ](http://biopython.org/wiki/The_Biopython_Structural_Bioinformatics_FAQ).
+
+### PyMol Installation
+This is how I would install PyMol:
+
+```
+pip install pymol.whl
+```
+
+where ```pymol.whl``` is replaced by the PyMol wheel file name. For more information, see [PyMol Windows Install](https://pymolwiki.org/index.php/Windows_Install).
