@@ -47,6 +47,11 @@ model.add(Activation('softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer=RMSprop(lr=0.01))
 
+from Barnacle import Barnacle
+import os
+os.makedirs('output', exist_ok=True)
+
+
 for i in range(30):
     print('round %i' % i)
     model.fit(X, y, batch_size=128, epochs=1)
@@ -62,7 +67,7 @@ for i in range(30):
 
     print(generated)
 
-    for i in range(73 - test_length):
+    for j in range(73 - test_length):
         x = np.zeros((1, test_length, len(chars)), dtype=np.bool)
         for t, char in enumerate(sentence):
             x[0, t, char2index[char]] = 1
@@ -75,3 +80,7 @@ for i in range(30):
 
     print(sequences[0])
     print(generated, flush=True)
+
+    rna_model = Barnacle(generated.replace('A', 'U').replace('T', 'A').replace('C', 'G').replace('G', 'C'))
+    rna_model.sample()
+    rna_model.save_structure("output/output%i.pdb" % i)
