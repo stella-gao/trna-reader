@@ -60,3 +60,22 @@ pip install pymol.whl
 ```
 
 where ```pymol.whl``` is replaced by the PyMol wheel file name. For more information, see [PyMol Windows Install](https://pymolwiki.org/index.php/Windows_Install).
+
+# The Prospect of Using rFAM or Infernal
+
+A [Python binding](https://anaconda.org/bioconda/infernal) for [Infernal](http://eddylab.org/infernal/) can be found hosted as a package on the [bioconda](https://bioconda.github.io/).
+
+Infernal is created by the [Eddy/Rivas Lab](http://eddylab.org/) ([Github]()) formerly at the Janelia Institute and now at Harvard University.
+
+[rFam](http://rfam.readthedocs.io/en/latest/index.html) can be used for looking for families of RNA sequences.
+
+## Using Jupyter and IPython
+In order to use Jupyter, we need to install Jupyter for the Anaconda environment:
+```
+conda install jupyter
+```
+
+Next, we have to start up the Jupyter server:
+```
+jupyter notebook
+```
