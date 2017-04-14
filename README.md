@@ -1,29 +1,18 @@
 # trna-reader
 A project to see if recurrent neural networks can learn to write transcribe tRNA
 
-## Installing Everything
+## Installation 
 Because of limited support for different operating systems in the bioconda packages, only Linux support is tested. Other operating systems may be used, but are not officially supported.
 
-### Anaconda Packages
 ```
+git clone https://github.com/trevortknguyen/trna-reader
+cd trna-reader
 conda env create -f environment.yml
 source activate trna-reader
-```
-
-### Environment PyPi Packages
-Make sure to do this within the newly created Anaconda environment.
-
-```
 pip install -r requirements.txt
-```
-
-### Running
-To view the Jupyter notebook, please use
-```
 jupyter notebook
+source deactivate
 ```
-while within the trna-reader anaconda environment.
-
 
 # The Prospect of Using rFAM or Infernal
 
