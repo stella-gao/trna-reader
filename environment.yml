@@ -1,0 +1,6 @@
+name: trna-reader
+dependencies:
+  - numpy
+  - seaborn
+  - biopython
+  - jupyter
