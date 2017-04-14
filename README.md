@@ -17,6 +17,14 @@ Make sure to do this within the newly created Anaconda environment.
 pip install -r requirements.txt
 ```
 
+### Running
+To view the Jupyter notebook, please use
+```
+jupyter notebook
+```
+while within the trna-reader anaconda environment.
+
+
 # The Prospect of Using rFAM or Infernal
 
 A [Python binding](https://anaconda.org/bioconda/infernal) for [Infernal](http://eddylab.org/infernal/) can be found hosted as a package on the [bioconda](https://bioconda.github.io/).
