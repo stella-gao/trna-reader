@@ -1,6 +1,9 @@
 name: trna-reader
+channels:
+  - bioconda
 dependencies:
   - numpy
   - seaborn
   - biopython
   - jupyter
+  - infernal
